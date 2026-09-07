@@ -73,13 +73,13 @@ import Footer from '../components/Footer.astro';
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
         {[
-          { name: '家居与厨房', count: 48, color: 'from-amber-50 to-orange-50' },
-          { name: '健身与健康', count: 36, color: 'from-emerald-50 to-teal-50' },
-          { name: '美容与个人护理', count: 42, color: 'from-pink-50 to-rose-50' },
-          { name: '智能家居', count: 31, color: 'from-blue-50 to-indigo-50' },
-          { name: '户外与旅行', count: 28, color: 'from-stone-50 to-slate-50' }
+          { name: '家居与厨房', slug: 'home-kitchen', count: 48, color: 'from-amber-50 to-orange-50' },
+          { name: '健身与健康', slug: 'fitness-health', count: 36, color: 'from-emerald-50 to-teal-50' },
+          { name: '美容与个人护理', slug: 'beauty-care', count: 42, color: 'from-pink-50 to-rose-50' },
+          { name: '智能家居', slug: 'smart-home', count: 31, color: 'from-blue-50 to-indigo-50' },
+          { name: '户外与旅行', slug: 'outdoor-travel', count: 28, color: 'from-stone-50 to-slate-50' }
         ].map((cat, i) => (
-          <a href={`/categories/${cat.name}`} class={`card-hover rounded-2xl overflow-hidden bg-gradient-to-br ${cat.color} border border-border p-8 text-center group`} data-aos="fade-up" data-aos-delay={i * 100}>
+          <a href={`/blog?category=${cat.slug}`} class={`card-hover rounded-2xl overflow-hidden bg-gradient-to-br ${cat.color} border border-border p-8 text-center group`} data-aos="fade-up" data-aos-delay={i * 100}>
             <div class="w-16 h-16 rounded-full bg-white/80 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
               <span class="font-playfair text-2xl text-gold-primary">{['🏠','💪','✨','🏠','🏕️'][i]}</span>
             </div>
