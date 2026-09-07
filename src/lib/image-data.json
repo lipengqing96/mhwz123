@@ -1,0 +1,33 @@
+{
+  "blog": {
+    "portable-blenders": "https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?w=1200&q=80",
+    "led-desk-lamps": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=1200&q=80",
+    "yoga-mats": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1200&q=80",
+    "robot-vacuums": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
+    "essential-oil-diffusers": "https://images.unsplash.com/photo-1602928321679-660471b79980?w=1200&q=80",
+    "air-fryers": "https://images.unsplash.com/photo-1585515320310-259814833e62?w=1200&q=80",
+    "weighted-blankets": "https://images.unsplash.com/photo-1540518610137-9a8f0957a437?w=1200&q=80",
+    "electric-kettles": "https://images.unsplash.com/photo-1517668903547-a5a3a4950669?w=1200&q=80",
+    "standing-desks": "https://images.unsplash.com/photo-1593642632554-4c5a09ae985a?w=1200&q=80",
+    "cordless-vacuums": "https://images.unsplash.com/photo-1558317377-a3172514af20?w=1200&q=80",
+    "skincare-fridges": "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1200&q=80",
+    "water-bottles": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=1200&q=80",
+    "massage-guns": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1200&q=80",
+    "coffee-makers": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200&q=80",
+    "area-rugs": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200&q=80"
+  },
+  "categories": {
+    "home-kitchen": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80",
+    "fitness-health": "https://images.unsplash.com/photo-1517836357463-d25d9ac13e7d?w=800&q=80",
+    "beauty-care": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=80",
+    "smart-home": "https://images.unsplash.com/photo-1558002038-1055907df827?w=800&q=80",
+    "outdoor-travel": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&q=80"
+  },
+  "homepage": {
+    "hero-bg": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1920&q=80",
+    "hero-card-1": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80",
+    "hero-card-2": "https://images.unsplash.com/photo-1517836357463-d25d9ac13e7d?w=600&q=80",
+    "hero-card-3": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80",
+    "hero-card-4": "https://images.unsplash.com/photo-1558002038-1055907df827?w=600&q=80"
+  }
+}

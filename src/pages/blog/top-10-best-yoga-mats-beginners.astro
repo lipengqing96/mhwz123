@@ -38,8 +38,9 @@ const schema = {
         </div>
       </div>
 
-      <div class="rounded-2xl overflow-hidden h-64 md:h-96 bg-gradient-to-br from-cream to-gold-light/20 mb-12 flex items-center justify-center" data-aos="fade-up">
-        <span class="font-playfair text-8xl text-gold-primary/20">🧘</span>
+      <div class="rounded-2xl overflow-hidden h-64 md:h-96 mb-12 relative group" data-aos="fade-up">
+        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1200&q=80" alt="hero" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+        <div class="absolute inset-0 bg-gradient-to-t from-dark-bg/30 to-transparent"></div>🧘</span>
       </div>
 
       <div class="prose prose-lg max-w-none" data-aos="fade-up">
@@ -92,9 +93,9 @@ const schema = {
             </div>
             <p class="font-inter text-secondary leading-relaxed mb-4">BlenderBottles Sport 是一款经典的便携式搅拌瓶，采用独特的 WireWhisk 搅拌球设计，无需电力即可轻松混合蛋白粉和饮料。真空密封盖确保不会泄漏，非常适合放入包中携带。20盎司的容量足够满足您的日常需求。</p>
             <div class="grid grid-cols-2 gap-4 mb-4">
-              <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="font-inter text-sm text-emerald-deep">优点：不易泄漏</span></div>
-              <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="font-inter text-sm text-emerald-deep">优点：无需电力</span></div>
-              <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6B6B6B" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg><span class="font-inter text-sm text-secondary">缺点：不能搅拌水果</span></div>
+              <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg
+              <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg
+              <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6B6B6B" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg
             </div>
             <a href="#" class="inline-flex items-center gap-2 btn-gold text-sm">在亚马逊上查看价格 →</a>
           </div>
@@ -113,9 +114,9 @@ const schema = {
             </div>
             <p class="font-inter text-secondary leading-relaxed mb-4">NutriBullet Go 是便携式搅拌机的革命性产品。采用 USB-C 充电设计，一次充电可制作10-15杯 Smoothie。18盎司的杯身采用 Tritan 材质，不含 BPA。三叶刀片能够轻松粉碎冰块和冷冻水果，让您可以随时随地享受新鲜制作的果汁。</p>
             <div class="grid grid-cols-2 gap-4 mb-4">
-              <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="font-inter text-sm text-emerald-deep">优点：USB充电</span></div>
-              <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="font-inter text-sm text-emerald-deep">优点：强劲动力</span></div>
-              <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6B6B6B" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg><span class="font-inter text-sm text-secondary">缺点：价格较高</span></div>
+              <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg
+              <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg
+              <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6B6B6B" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg
             </div>
             <a href="#" class="inline-flex items-center gap-2 btn-gold text-sm">在亚马逊上查看价格 →</a>
           </div>
@@ -134,9 +135,9 @@ const schema = {
             </div>
             <p class="font-inter text-secondary leading-relaxed mb-4">PopBabies 迷你搅拌机以其可爱的外观和紧凑的设计赢得了众多用户的喜爱。13盎司的容量非常适合单人使用，六叶刀片能够轻松搅拌柔软的水果和绿叶蔬菜。多种时尚颜色可选，让您展现个性风格。</p>
             <div class="grid grid-cols-2 gap-4 mb-4">
-              <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="font-inter text-sm text-emerald-deep">优点：小巧便携</span></div>
-              <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="font-inter text-sm text-emerald-deep">优点：多种颜色</span></div>
-              <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6B6B6B" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg><span class="font-inter text-sm text-secondary">缺点：不能处理冰块</span></div>
+              <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg
+              <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg
+              <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6B6B6B" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg
             </div>
             <a href="#" class="inline-flex items-center gap-2 btn-gold text-sm">在亚马逊上查看价格 →</a>
           </div>

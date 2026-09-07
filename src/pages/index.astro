@@ -9,7 +9,11 @@ import Footer from '../components/Footer.astro';
 
   <!-- Hero Section -->
   <section class="relative min-h-screen flex items-center overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-cream via-white to-cream"></div>
+    <div class="absolute inset-0">
+        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1920&q=80" alt="Luxury Living" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-white/70"></div>
+        <div class="absolute inset-0 bg-gradient-to-br from-cream/40 via-transparent to-cream/60"></div>
+      </div>
     <div class="absolute inset-0 opacity-5" style="background-image: url('data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C9A962' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
     <div class="relative max-w-7xl mx-auto px-6 py-32 grid lg:grid-cols-2 gap-12 items-center">
       <div data-aos="fade-right">
@@ -24,12 +28,28 @@ import Footer from '../components/Footer.astro';
       <div data-aos="fade-left" class="relative">
         <div class="grid grid-cols-2 gap-4">
           <div class="space-y-4 mt-8">
-            <div class="rounded-2xl overflow-hidden shadow-card h-48 bg-gradient-to-br from-cream to-gold-light/20 flex items-center justify-center"><span class="font-playfair text-2xl text-gold-primary/60">Living</span></div>
-            <div class="rounded-2xl overflow-hidden shadow-card h-32 bg-gradient-to-br from-emerald-deep to-emerald-light/30 flex items-center justify-center"><span class="font-playfair text-xl text-white/80">Wellness</span></div>
+            <div class="rounded-2xl overflow-hidden shadow-card h-48 relative group">
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80" alt="Living" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-bg/50 to-transparent"></div>
+            <span class="absolute bottom-3 left-4 font-playfair text-lg font-semibold text-white">Living</span>
+          </div>
+          <div class="rounded-2xl overflow-hidden shadow-card h-32 relative group">
+            <img src="https://images.unsplash.com/photo-1517836357463-d25d9ac13e7d?w=600&q=80" alt="Wellness" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-bg/50 to-transparent"></div>
+            <span class="absolute bottom-3 left-4 font-playfair text-lg font-semibold text-white">Wellness</span>
+          </div>
           </div>
           <div class="space-y-4">
-            <div class="rounded-2xl overflow-hidden shadow-card h-32 bg-gradient-to-br from-gold-primary/20 to-cream flex items-center justify-center"><span class="font-playfair text-xl text-gold-primary/80">Kitchen</span></div>
-            <div class="rounded-2xl overflow-hidden shadow-card h-48 bg-gradient-to-br from-cream to-border flex items-center justify-center"><span class="font-playfair text-2xl text-secondary/60">Smart</span></div>
+          <div class="rounded-2xl overflow-hidden shadow-card h-32 relative group">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80" alt="Kitchen" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-bg/50 to-transparent"></div>
+            <span class="absolute bottom-3 left-4 font-playfair text-lg font-semibold text-white">Kitchen</span>
+          </div>
+          <div class="rounded-2xl overflow-hidden shadow-card h-48 relative group">
+            <img src="https://images.unsplash.com/photo-1558002038-1055907df827?w=600&q=80" alt="Smart Home" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy" />
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-bg/50 to-transparent"></div>
+            <span class="absolute bottom-3 left-4 font-playfair text-lg font-semibold text-white">Smart</span>
+          </div>
           </div>
         </div>
       </div>
