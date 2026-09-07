@@ -1,0 +1,43 @@
+---
+import { useState } from 'react';
+---
+<header class="fixed w-full z-50 glass-header transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="/" class="flex flex-col items-start">
+      <span class="font-playfair font-bold text-3xl gold-gradient-text tracking-tight">LuxeRank</span>
+      <span class="font-inter text-xs text-muted tracking-widest uppercase mt-[-4px]">Living</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-8">
+      <a href="/" class="font-inter text-sm text-secondary hover:text-gold-primary transition-colors duration-200">首页</a>
+      <a href="/categories" class="font-inter text-sm text-secondary hover:text-gold-primary transition-colors duration-200">分类</a>
+      <a href="/about" class="font-inter text-sm text-secondary hover:text-gold-primary transition-colors duration-200">关于我们</a>
+      <a href="/contact" class="font-inter text-sm text-secondary hover:text-gold-primary transition-colors duration-200">联系我们</a>
+      <a href="/blog" class="font-inter text-sm text-secondary hover:text-gold-primary transition-colors duration-200">博客</a>
+      <a href="/blog" class="btn-gold text-sm ml-4">开始阅读</a>
+    </nav>
+    <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-cream transition-colors">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gold-primary"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+<div id="mobile-menu" class="fixed inset-0 z-40 bg-white/95 backdrop-blur-xl transform translate-x-full transition-transform duration-300 md:hidden">
+  <div class="flex flex-col items-center justify-center h-full gap-8">
+    <button id="mobile-menu-close" class="absolute top-6 right-6 p-2 rounded-lg hover:bg-cream transition-colors">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gold-primary"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
+    <a href="/" class="font-playfair text-2xl text-dark-bg hover:text-gold-primary transition-colors" onclick="closeMobileMenu()">首页</a>
+    <a href="/categories" class="font-playfair text-2xl text-dark-bg hover:text-gold-primary transition-colors" onclick="closeMobileMenu()">分类</a>
+    <a href="/about" class="font-playfair text-2xl text-dark-bg hover:text-gold-primary transition-colors" onclick="closeMobileMenu()">关于我们</a>
+    <a href="/contact" class="font-playfair text-2xl text-dark-bg hover:text-gold-primary transition-colors" onclick="closeMobileMenu()">联系我们</a>
+    <a href="/blog" class="font-playfair text-2xl text-dark-bg hover:text-gold-primary transition-colors" onclick="closeMobileMenu()">博客</a>
+    <a href="/blog" class="btn-gold mt-4">开始阅读</a>
+  </div>
+</div>
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const closeBtn = document.getElementById('mobile-menu-close');
+  btn?.addEventListener('click', () => menu?.classList.remove('translate-x-full'));
+  closeBtn?.addEventListener('click', () => menu?.classList.add('translate-x-full'));
+  window.closeMobileMenu = () => menu?.classList.add('translate-x-full');
+</script>

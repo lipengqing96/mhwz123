@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+<BaseLayout title="博客 - LuxeRank">
+  <fragment slot="header"><Header /></fragment>
+  <fragment slot="footer"><Footer /></fragment>
+
+  <section class="py-24 bg-cream">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h1 class="font-playfair text-5xl md:text-6xl font-bold text-dark-bg mb-4">产品评测博客</h1>
+        <div class="w-24 h-px bg-gradient-to-r from-transparent via-gold-primary to-transparent mx-auto mb-6"></div>
+        <p class="font-inter text-lg text-secondary max-w-2xl mx-auto">专家深度评测，真实用户体验，帮助您做出明智的购买决策。</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {[
+          {title:'2026年最佳便携式搅拌机Top10',slug:'top-10-best-portable-blenders-smoothies-2026',cat:'家居与厨房',time:'8分钟',date:'2026-08-15',desc:'从BlenderBottles到NutriBullet Go，精选最轻便的随身搅拌机，让你的健康生活随时随地。'},
+          {title:'最佳LED台灯推荐：提升居家办公体验',slug:'top-10-best-led-desk-lamps-work-from-home',cat:'智能家居',time:'10分钟',date:'2026-08-10',desc:'BenQ ScreenBar、小米米家台灯等顶级品牌深度测评，为你的办公桌增添专业光线。'},
+          {title:'瑜伽垫入门指南：这10款最适合初学者',slug:'top-10-best-yoga-mats-beginners',cat:'健身与健康',time:'7分钟',date:'2026-08-05',desc:'Manduka PRO Lite、Lululemon The Mat等热门选择全方位对比，找到你的完美瑜伽垫。'},
+          {title:'最佳机器人吸尘器推荐（300美元以内）',slug:'top-10-best-robot-vacuums-under-300',cat:'智能家居',time:'9分钟',date:'2026-07-28',desc:'石头科技Qrevo、Eufy RoboVac、Shark IQ等性价比之选，让清洁更轻松。'},
+          {title:'最佳香薰机推荐Top10',slug:'top-10-best-essential-oil-diffusers',cat:'家居与厨房',time:'6分钟',date:'2026-07-20',desc:'URPOWER、Innogear、ASAKUKI等品牌深度测评，打造您的芳香空间。'},
+          {title:'小型厨房最佳空气炸锅推荐',slug:'top-10-best-air-fryers-small-kitchen',cat:'家居与厨房',time:'8分钟',date:'2026-07-15',desc:'Ninja Foodi、COSORI、飞利浦空气炸锅等热门选择，健康烹饪新选择。'},
+          {title:'最佳重力毯推荐：提升睡眠质量',slug:'top-10-best-weighted-blankets-better-sleep',cat:'健身与健康',time:'7分钟',date:'2026-07-10',desc:'Gravity、YnM、ZONLI等品牌深度测评，让您拥有更好的睡眠体验。'},
+          {title:'最佳精准控温电水壶推荐',slug:'top-10-best-electric-kettles-precise-temperature',cat:'家居与厨房',time:'6分钟',date:'2026-07-05',desc:'Fellow Stagg EKG、Breville、Cuisinart等专业级电水壶评测。'},
+          {title:'最佳升降桌推荐Top10',slug:'top-10-best-standing-desks-converter',cat:'智能家居',time:'9分钟',date:'2026-06-28',desc:'VariDesk、全站立式、FlexiSpot等升降桌深度测评，改善您的办公体验。'},
+          {title:'最佳轻便无线吸尘器推荐',slug:'top-10-best-cordless-vacuums-lightweight',cat:'家居与厨房',time:'8分钟',date:'2026-06-20',desc:'戴森V8/V10、鲨客Stratos、添可Pure ONE等顶级吸尘器评测。'},
+          {title:'最佳迷你护肤冰箱推荐',slug:'top-10-best-skincare-fridges-mini',cat:'美容与个人护理',time:'7分钟',date:'2026-06-15',desc:'Kalroute、Clikix、MISTY等品牌测评，让您的护肤品保持最佳状态。'},
+          {title:'最佳保温水杯推荐Top10',slug:'top-10-best-insulated-water-bottles',cat:'户外与旅行',time:'6分钟',date:'2026-06-10',desc:'Hydro Flask、Yeti、Stanley、Owala等热门品牌深度测评。'},
+          {title:'最佳按摩枪推荐：运动恢复必备',slug:'top-10-best-massage-guns-recovery',cat:'健身与健康',time:'8分钟',date:'2026-06-05',desc:'Theragun Pro、Hypervolt、BOULDER、Renpho等专业级按摩枪评测。'},
+          {title:'最佳单人咖啡机推荐Top10',slug:'top-10-best-coffee-makers-single-serve',cat:'家居与厨房',time:'7分钟',date:'2026-05-28',desc:'Keurig K-Elite、Nespresso Vertuo、Breville等顶级咖啡机评测。'},
+          {title:'最佳客厅地毯推荐Top10',slug:'top-10-best-area-rugs-living-room',cat:'家居与厨房',time:'6分钟',date:'2026-05-20',desc:'nuLOOM、Mohawk、Rugs USA、Well Woven等品牌深度测评。'}
+        ].map((post, i) => (
+          <a href={`/blog/${post.slug}`} class="card-hover bg-white rounded-2xl overflow-hidden shadow-card group" data-aos="fade-up" data-aos-delay={i * 50}>
+            <div class="h-48 bg-gradient-to-br from-cream to-gold-light/10 flex items-center justify-center relative overflow-hidden">
+              <span class="font-playfair text-5xl text-gold-primary/20 group-hover:scale-110 transition-transform duration-500">{['🍹','💡','🧘','🤖','🌿','🍳','😴','☕','💺','🧹','🧴','🥤','💆','☕','🏠'][i]}</span>
+              <span class="absolute top-4 left-4 font-inter text-xs bg-gold-primary text-dark-bg px-3 py-1 rounded-full font-semibold">{post.cat}</span>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-3">
+                <span class="font-inter text-xs text-muted">{post.date}</span>
+                <span class="font-inter text-xs text-muted">•</span>
+                <span class="font-inter text-xs text-muted">{post.time}阅读</span>
+              </div>
+              <h3 class="font-playfair font-semibold text-lg text-dark-bg mb-3 line-clamp-2 group-hover:text-gold-primary transition-colors">{post.title}</h3>
+              <p class="font-inter text-sm text-secondary leading-relaxed line-clamp-2">{post.desc}</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

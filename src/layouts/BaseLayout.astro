@@ -1,0 +1,62 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+const { title, description = '探索世界顶级产品，为品味卓越的生活方式甄选经典之作。' } = Astro.props;
+---
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="lhverifycode" content="32dc01246faccb7f5b3cad5016dd5033" />
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title + ' - LuxeRank'} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={"https://luxerrank.com" + Astro.url.pathname} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href={"https://luxerrank.com" + Astro.url.pathname} />
+    <title>{title} - LuxeRank</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body class="min-h-screen bg-white">
+    <div id="progress-bar"></div>
+    <slot name="header" />
+    <main class="pt-16">
+      <slot />
+    </main>
+    <slot name="footer" />
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 rounded-full bg-gradient-to-r from-gold-primary to-gold-light text-dark-bg shadow-gold flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 hover:shadow-elevated z-40" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+    </button>
+    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-dark-bg/95 backdrop-blur-lg text-white p-4 z-50 transform translate-y-full transition-transform duration-300">
+      <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="font-inter text-sm text-muted">我们使用cookie来改善您的体验。继续浏览即表示您同意我们的<a href="/privacy" class="text-gold-primary hover:underline">隐私政策</a>。</p>
+        <button id="cookie-accept" class="btn-gold text-sm py-2 px-6">接受</button>
+      </div>
+    </div>
+    <script>
+      window.addEventListener('scroll', () => {
+        const scrolled = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = docHeight > 0 ? (scrolled / docHeight) * 100 : 0;
+        document.getElementById('progress-bar').style.width = progress + '%';
+        const btn = document.getElementById('back-to-top');
+        if (btn) btn.classList.toggle('opacity-0 pointer-events-none', scrolled < 300);
+      });
+      if (localStorage.getItem('cookieAccepted')) {
+        document.getElementById('cookie-banner').classList.add('translate-y-full');
+      } else {
+        setTimeout(() => document.getElementById('cookie-banner').classList.remove('translate-y-full'), 1000);
+      }
+      document.getElementById('cookie-accept').addEventListener('click', () => {
+        localStorage.setItem('cookieAccepted', 'true');
+        document.getElementById('cookie-banner').classList.add('translate-y-full');
+      });
+    </script>
+  </body>
+</html>
+---

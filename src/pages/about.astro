@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+<BaseLayout title="关于我们 - LuxeRank">
+  <fragment slot="header"><Header /></fragment>
+  <fragment slot="footer"><Footer /></fragment>
+
+  <section class="py-24 bg-white">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h1 class="font-playfair text-5xl md:text-6xl font-bold text-dark-bg mb-6">关于我们</h1>
+        <div class="w-24 h-px bg-gradient-to-r from-transparent via-gold-primary to-transparent mx-auto mb-6"></div>
+        <p class="font-inter text-lg text-secondary max-w-2xl mx-auto leading-relaxed">LuxeRank 成立于2026年，致力于为全球消费者提供最专业、最客观的产品评测服务。我们相信，每一个精心挑选的产品，都能为您的生活增添品质与格调。</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12 mb-20" data-aos="fade-up">
+        <div class="bg-cream rounded-2xl p-8">
+          <h2 class="font-playfair text-2xl font-bold text-dark-bg mb-4">我们的使命</h2>
+          <p class="font-inter text-secondary leading-relaxed">在信息爆炸的时代，消费者面临着前所未有的选择困难。我们的产品评测团队由经验丰富的行业专家组成，通过严谨的测试流程，为您提供真正有价值的购买建议。我们承诺每篇评测都基于真实用户体验，不受任何品牌影响。</p>
+        </div>
+        <div class="bg-cream rounded-2xl p-8">
+          <h2 class="font-playfair text-2xl font-bold text-dark-bg mb-4">编辑流程</h2>
+          <p class="font-inter text-secondary leading-relaxed">我们的评测流程包括：产品调研（3天）→ 实地测试（7天）→ 对比分析（2天）→ 内容撰写（3天）→ 专家审核（1天）。每篇评测至少经过3轮审核，确保信息的准确性和客观性。所有测试产品均通过正规渠道购买，不接受品牌方免费提供。</p>
+        </div>
+      </div>
+
+      <div class="text-center" data-aos="fade-up">
+        <div class="inline-grid grid-cols-3 gap-8 mb-12">
+          <div class="text-center">
+            <div class="font-playfair text-4xl font-bold gold-gradient-text mb-2">500+</div>
+            <div class="font-inter text-sm text-muted">产品测试</div>
+          </div>
+          <div class="text-center">
+            <div class="font-playfair text-4xl font-bold gold-gradient-text mb-2">50,000+</div>
+            <div class="font-inter text-sm text-muted">订阅用户</div>
+          </div>
+          <div class="text-center">
+            <div class="font-playfair text-4xl font-bold gold-gradient-text mb-2">100%</div>
+            <div class="font-inter text-sm text-muted">独立评测</div>
+          </div>
+        </div>
+        <p class="font-inter text-secondary max-w-2xl mx-auto leading-relaxed">我们是一支充满激情的团队，每一位成员都是产品爱好者。从厨房小家电到智能穿戴设备，从健身器材到美妆工具，我们用专业的视角为您甄选每一件值得购买的产品。</p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

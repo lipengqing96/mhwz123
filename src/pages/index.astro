@@ -1,0 +1,124 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+<BaseLayout title="LuxeRank - 探索世界顶级产品">
+  <fragment slot="header"><Header /></fragment>
+  <fragment slot="footer"><Footer /></fragment>
+
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-cream via-white to-cream"></div>
+    <div class="absolute inset-0 opacity-5" style="background-image: url('data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C9A962' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+    <div class="relative max-w-7xl mx-auto px-6 py-32 grid lg:grid-cols-2 gap-12 items-center">
+      <div data-aos="fade-right">
+        <span class="inline-block font-inter text-xs font-semibold tracking-[0.3em] text-gold-primary uppercase mb-6 border border-gold-primary/30 px-4 py-2 rounded-full">Trusted Reviews Since 2026</span>
+        <h1 class="font-playfair text-5xl md:text-6xl lg:text-7xl font-bold text-dark-bg leading-[1.1] tracking-[-0.02em] mb-6">探索世界<br/>顶级产品</h1>
+        <p class="font-inter text-lg text-secondary leading-relaxed mb-10 max-w-lg">精选评论，专家见解，为品味卓越的生活方式甄选的经典之作。</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="/blog" class="btn-gold">查看精选</a>
+          <a href="/categories" class="btn-gold-outline">浏览分类</a>
+        </div>
+      </div>
+      <div data-aos="fade-left" class="relative">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="space-y-4 mt-8">
+            <div class="rounded-2xl overflow-hidden shadow-card h-48 bg-gradient-to-br from-cream to-gold-light/20 flex items-center justify-center"><span class="font-playfair text-2xl text-gold-primary/60">Living</span></div>
+            <div class="rounded-2xl overflow-hidden shadow-card h-32 bg-gradient-to-br from-emerald-deep to-emerald-light/30 flex items-center justify-center"><span class="font-playfair text-xl text-white/80">Wellness</span></div>
+          </div>
+          <div class="space-y-4">
+            <div class="rounded-2xl overflow-hidden shadow-card h-32 bg-gradient-to-br from-gold-primary/20 to-cream flex items-center justify-center"><span class="font-playfair text-xl text-gold-primary/80">Kitchen</span></div>
+            <div class="rounded-2xl overflow-hidden shadow-card h-48 bg-gradient-to-br from-cream to-border flex items-center justify-center"><span class="font-playfair text-2xl text-secondary/60">Smart</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 flex flex-col items-center gap-2 pb-8">
+      <div class="flex items-center gap-8 font-inter text-xs text-muted">
+        <span class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C9A962" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>500+ 款产品测试</span>
+        <span class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C9A962" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>专家评测</span>
+        <span class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C9A962" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>客观排名</span>
+      </div>
+      <div class="animate-bounce mt-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C9A962" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="font-playfair text-4xl md:text-5xl font-bold text-dark-bg mb-4">按类别浏览</h2>
+        <div class="w-24 h-px bg-gradient-to-r from-transparent via-gold-primary to-transparent mx-auto"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+        {[
+          { name: '家居与厨房', count: 48, color: 'from-amber-50 to-orange-50' },
+          { name: '健身与健康', count: 36, color: 'from-emerald-50 to-teal-50' },
+          { name: '美容与个人护理', count: 42, color: 'from-pink-50 to-rose-50' },
+          { name: '智能家居', count: 31, color: 'from-blue-50 to-indigo-50' },
+          { name: '户外与旅行', count: 28, color: 'from-stone-50 to-slate-50' }
+        ].map((cat, i) => (
+          <a href={`/categories/${cat.name}`} class={`card-hover rounded-2xl overflow-hidden bg-gradient-to-br ${cat.color} border border-border p-8 text-center group`} data-aos="fade-up" data-aos-delay={i * 100}>
+            <div class="w-16 h-16 rounded-full bg-white/80 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+              <span class="font-playfair text-2xl text-gold-primary">{['🏠','💪','✨','🏠','🏕️'][i]}</span>
+            </div>
+            <h3 class="font-playfair font-semibold text-lg text-dark-bg mb-2">{cat.name}</h3>
+            <span class="inline-block font-inter text-xs text-muted bg-white/60 px-3 py-1 rounded-full">{cat.count} 款产品</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- Featured Reviews Section -->
+  <section class="py-24 bg-cream">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="font-playfair text-4xl md:text-5xl font-bold text-dark-bg mb-4">编辑精选</h2>
+        <div class="w-24 h-px bg-gradient-to-r from-transparent via-gold-primary to-transparent mx-auto"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {[
+          { title: '2026年最佳便携式搅拌机Top10', cat: '家居与厨房', time: '8分钟', desc: '从BlenderBottles到NutriBullet Go，精选最轻便的随身搅拌机，让你的健康生活随时随地。' },
+          { title: '最佳LED台灯推荐：提升居家办公体验', cat: '智能家居', time: '10分钟', desc: 'BenQ ScreenBar、小米米家台灯等顶级品牌深度测评，为你的办公桌增添专业光线。' },
+          { title: '瑜伽垫入门指南：这10款最适合初学者', cat: '健身与健康', time: '7分钟', desc: 'Manduka PRO Lite、Lululemon The Mat等热门选择全方位对比，找到你的完美瑜伽垫。' }
+        ].map((post, i) => (
+          <a href={`/blog/${post.title.toLowerCase().replace(/[^a-z0-9]/g,'-')}`} class="card-hover bg-white rounded-2xl overflow-hidden shadow-card group" data-aos="fade-up" data-aos-delay={i * 100}>
+            <div class="h-48 bg-gradient-to-br from-cream to-gold-light/10 flex items-center justify-center relative overflow-hidden">
+              <span class="font-playfair text-6xl text-gold-primary/20 group-hover:scale-110 transition-transform duration-500">{['🍹','💡','🧘'][i]}</span>
+              <span class="absolute top-4 left-4 font-inter text-xs bg-gold-primary text-dark-bg px-3 py-1 rounded-full font-semibold">{post.cat}</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-playfair font-semibold text-xl text-dark-bg mb-3 line-clamp-2 group-hover:text-gold-primary transition-colors">{post.title}</h3>
+              <p class="font-inter text-sm text-secondary leading-relaxed mb-4 line-clamp-2">{post.desc}</p>
+              <div class="flex items-center justify-between">
+                <span class="font-inter text-xs text-muted">{post.time}阅读</span>
+                <span class="font-inter text-sm text-gold-primary flex items-center gap-1 group-hover:gap-2 transition-all">阅读全文 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+      <div class="text-center mt-12">
+        <a href="/blog" class="btn-gold-outline">查看更多评测</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="py-24 gold-gradient">
+    <div class="max-w-3xl mx-auto px-6 text-center" data-aos="fade-up">
+      <h2 class="font-playfair text-4xl md:text-5xl font-bold text-dark-bg mb-4">加入超过5万名眼光独到的购物者</h2>
+      <p class="font-inter text-dark-bg/70 mb-8">每周精选推荐，专家深度评测，第一时间获取顶级产品资讯。</p>
+      <div class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+        <input type="email" placeholder="请输入您的邮箱" class="flex-1 px-6 py-4 rounded-lg border-2 border-gold-primary/30 bg-white/90 font-inter text-dark-bg focus:outline-none focus:border-gold-primary transition-colors" />
+        <button class="btn-gold whitespace-nowrap">订阅周报</button>
+      </div>
+      <p class="font-inter text-xs text-dark-bg/50 mt-4">我们尊重您的隐私，绝不会发送垃圾邮件。</p>
+    </div>
+  </section>
+
+</BaseLayout>

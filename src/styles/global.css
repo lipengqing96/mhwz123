@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; color: #1A1A1A; background-color: #FFFFFF; -webkit-font-smoothing: antialiased; }
+  h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
+  ::selection { background-color: #C9A962; color: white; }
+}
+@layer components {
+  .gold-gradient { background: linear-gradient(135deg, #C9A962 0%, #E8D5B0 50%, #C9A962 100%); }
+  .gold-gradient-text { background: linear-gradient(135deg, #C9A962 0%, #E8D5B0 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .btn-gold { @apply px-8 py-4 bg-gradient-to-r from-gold-primary to-gold-light text-dark-bg font-semibold rounded-lg shadow-gold hover:shadow-elevated hover:-translate-y-0.5 transition-all duration-300; }
+  .btn-gold-outline { @apply px-8 py-4 border-2 border-gold-primary text-gold-primary font-semibold rounded-lg hover:bg-gold-primary hover:text-dark-bg transition-all duration-300; }
+  .section-divider { @apply w-full h-px bg-gradient-to-r from-transparent via-gold-primary to-transparent my-0; }
+  .card-hover { @apply transition-all duration-300 hover:shadow-elevated hover:-translate-y-1; }
+  .glass-header { @apply bg-white/80 backdrop-blur-lg border-b border-border; }
+}
+[data-aos] { transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94) !important; }
+#progress-bar { position: fixed; top: 0; left: 0; height: 3px; background: linear-gradient(90deg, #C9A962, #E8D5B0); z-index: 9999; transition: width 0.1s ease-out; }
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #F7F4EF; }
+::-webkit-scrollbar-thumb { background: #C9A962; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #A8873E; }
