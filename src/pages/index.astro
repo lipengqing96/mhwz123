@@ -102,11 +102,11 @@ import Footer from '../components/Footer.astro';
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {[
-          { title: '2026年最佳便携式搅拌机Top10', cat: '家居与厨房', time: '8分钟', desc: '从BlenderBottles到NutriBullet Go，精选最轻便的随身搅拌机，让你的健康生活随时随地。' },
-          { title: '最佳LED台灯推荐：提升居家办公体验', cat: '智能家居', time: '10分钟', desc: 'BenQ ScreenBar、小米米家台灯等顶级品牌深度测评，为你的办公桌增添专业光线。' },
-          { title: '瑜伽垫入门指南：这10款最适合初学者', cat: '健身与健康', time: '7分钟', desc: 'Manduka PRO Lite、Lululemon The Mat等热门选择全方位对比，找到你的完美瑜伽垫。' }
+          { title: '2026年最佳便携式搅拌机Top10', slug: 'top-10-best-portable-blenders-smoothies-2026', cat: '家居与厨房', time: '8分钟', desc: '从BlenderBottles到NutriBullet Go，精选最轻便的随身搅拌机，让你的健康生活随时随地。' },
+          { title: '最佳LED台灯推荐：提升居家办公体验', slug: 'top-10-best-led-desk-lamps-work-from-home', cat: '智能家居', time: '10分钟', desc: 'BenQ ScreenBar、小米米家台灯等顶级品牌深度测评，为你的办公桌增添专业光线。' },
+          { title: '瑜伽垫入门指南：这10款最适合初学者', slug: 'top-10-best-yoga-mats-beginners', cat: '健身与健康', time: '7分钟', desc: 'Manduka PRO Lite、Lululemon The Mat等热门选择全方位对比，找到你的完美瑜伽垫。' }
         ].map((post, i) => (
-          <a href={`/blog/${post.title.toLowerCase().replace(/[^a-z0-9]/g,'-')}`} class="card-hover bg-white rounded-2xl overflow-hidden shadow-card group" data-aos="fade-up" data-aos-delay={i * 100}>
+          <a href={`/blog/${post.slug}`} class="card-hover bg-white rounded-2xl overflow-hidden shadow-card group" data-aos="fade-up" data-aos-delay={i * 100}>
             <div class="h-48 bg-gradient-to-br from-cream to-gold-light/10 flex items-center justify-center relative overflow-hidden">
               <span class="font-playfair text-6xl text-gold-primary/20 group-hover:scale-110 transition-transform duration-500">{['🍹','💡','🧘'][i]}</span>
               <span class="absolute top-4 left-4 font-inter text-xs bg-gold-primary text-dark-bg px-3 py-1 rounded-full font-semibold">{post.cat}</span>

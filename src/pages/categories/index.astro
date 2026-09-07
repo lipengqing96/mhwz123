@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const categories = [
+  { name: '家居与厨房', slug: 'home-kitchen', count: 45, emoji: '🏠', color: 'from-amber-50 to-orange-50' },
+  { name: '健身与健康', slug: 'fitness-health', count: 38, emoji: '💪', color: 'from-green-50 to-emerald-50' },
+  { name: '美容与个人护理', slug: 'beauty-care', count: 42, emoji: '✨', color: 'from-pink-50 to-rose-50' },
+  { name: '智能家居', slug: 'smart-home', count: 31, emoji: '🤖', color: 'from-blue-50 to-indigo-50' },
+  { name: '户外与旅行', slug: 'outdoor-travel', count: 28, emoji: '🏕️', color: 'from-stone-50 to-slate-50' }
+];
+---
+<BaseLayout title="分类浏览 - LuxeRank">
+  <fragment slot="header"><Header /></fragment>
+  <fragment slot="footer"><Footer /></fragment>
+
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h1 class="font-playfair text-5xl md:text-6xl font-bold text-dark-bg mb-4">按类别浏览</h1>
+        <div class="w-24 h-px bg-gradient-to-r from-transparent via-gold-primary to-transparent mx-auto mb-6"></div>
+        <p class="font-inter text-lg text-secondary max-w-2xl mx-auto">从五大品类中探索精心甄选的优质产品</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {categories.map((cat, i) => (
+          <a href={`/blog?category=${cat.slug}`} class="card-hover rounded-2xl overflow-hidden bg-gradient-to-br {cat.color} border border-border p-8 text-center group" data-aos="fade-up" data-aos-delay={i * 100}>
+            <div class="w-20 h-20 rounded-full bg-white/80 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+              <span class="text-4xl">{cat.emoji}</span>
+            </div>
+            <h3 class="font-playfair font-semibold text-xl text-dark-bg mb-3">{cat.name}</h3>
+            <span class="inline-block font-inter text-sm text-muted bg-white/60 px-4 py-1.5 rounded-full">{cat.count} 款产品评测</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
