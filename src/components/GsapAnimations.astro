@@ -1,65 +1,53 @@
 ---
+const gsapConfig = {
+  sectionReveal: {
+    query: '[data-gsap-reveal]',
+    props: { y: 40, opacity: 0, duration: 0.8, ease: 'power2.out' }
+  },
+  staggerCards: { containerClass: '.gsap-stagger', cardClass: '.gsap-card' },
+  parallaxBg: { selector: '[data-parallax-bg]' },
+  floatingCards: { selector: '[data-float]' },
+  goldLine: { selector: '[data-gold-line]' },
+  counter: { selector: '[data-counter]' }
+};
 ---
-<script is:inline>
-const initGsap = async () => {
-  const { gsap } = await import('gsap');
-  const ScrollTrigger = (await import('gsap/ScrollTrigger')).default;
+<script client:load>
+  import { gsap } from 'gsap';
+  import { ScrollTrigger } from 'gsap/ScrollTrigger';
   gsap.registerPlugin(ScrollTrigger);
 
   // Section reveal
-  gsap.utils.toArray('[data-gsap-reveal]').forEach((el) => {
-    gsap.from(el, {
-      scrollTrigger: { trigger: el, start: 'top 85%', end: 'top 50%', toggleActions: 'play none none reverse' },
-      y: 40, opacity: 0, duration: 0.8, ease: 'power2.out'
-    });
+  gsap.utils.toArray(gsapConfig.sectionReveal.query).forEach(el => {
+    gsap.from(el, { scrollTrigger: { trigger: el, start: 'top 85%', toggleActions: 'play none none reverse' }, ...gsapConfig.sectionReveal.props });
   });
 
   // Staggered cards
-  gsap.utils.toArray('.gsap-stagger').forEach((container) => {
-    const cards = container.querySelectorAll('.gsap-card');
-    gsap.from(cards, {
-      scrollTrigger: { trigger: container, start: 'top 80%', toggleActions: 'play none none reverse' },
-      y: 50, opacity: 0, duration: 0.6, stagger: 0.1, ease: 'power2.out'
-    });
+  gsap.utils.toArray(gsapConfig.staggerCards.containerClass).forEach(container => {
+    const cards = container.querySelectorAll(gsapConfig.staggerCards.cardClass);
+    gsap.from(cards, { scrollTrigger: { trigger: container, start: 'top 80%', toggleActions: 'play none none reverse' }, y: 50, opacity: 0, duration: 0.6, stagger: 0.1, ease: 'power2.out' });
   });
 
-  // Parallax hero
-  const heroBg = document.querySelector('[data-parallax-bg]');
+  // Parallax hero bg
+  const heroBg = document.querySelector(gsapConfig.parallaxBg.selector);
   if (heroBg) {
-    gsap.to(heroBg, {
-      scrollTrigger: { trigger: heroBg.closest('section'), start: 'top bottom', end: 'bottom top', scrub: true },
-      y: -80, ease: 'none'
-    });
+    gsap.to(heroBg, { scrollTrigger: { trigger: heroBg.closest('section'), start: 'top bottom', end: 'bottom top', scrub: true }, y: -80, ease: 'none' });
   }
 
   // Floating cards
-  gsap.utils.toArray('[data-float]').forEach((el, i) => {
+  gsap.utils.toArray(gsapConfig.floatingCards.selector).forEach((el, i) => {
     gsap.to(el, { y: i % 2 === 0 ? -12 : 12, duration: 2 + i * 0.3, repeat: -1, yoyo: true, ease: 'sine.inOut' });
   });
 
   // Gold line draw
-  gsap.utils.toArray('[data-gold-line]').forEach((el) => {
-    gsap.from(el, {
-      scrollTrigger: { trigger: el, start: 'top 90%', toggleActions: 'play none none reverse' },
-      scaleX: 0, duration: 0.8, ease: 'power2.out', transformOrigin: 'left center'
-    });
+  gsap.utils.toArray(gsapConfig.goldLine.selector).forEach(el => {
+    gsap.from(el, { scrollTrigger: { trigger: el, start: 'top 90%', toggleActions: 'play none none reverse' }, scaleX: 0, duration: 0.8, ease: 'power2.out', transformOrigin: 'left center' });
   });
 
   // Counter
-  gsap.utils.toArray('[data-counter]').forEach((el) => {
+  gsap.utils.toArray(gsapConfig.counter.selector).forEach(el => {
     const target = parseInt(el.dataset.counter);
     if (isNaN(target)) return;
     const obj = { val: 0 };
-    gsap.to(obj, {
-      scrollTrigger: { trigger: el, start: 'top 85%', toggleActions: 'play none none reverse' },
-      val: target, duration: 2, ease: 'power1.out',
-      onUpdate: () => { el.textContent = Math.floor(obj.val).toLocaleString() + (el.dataset.suffix || ''); }
-    });
+    gsap.to(obj, { scrollTrigger: { trigger: el, start: 'top 85%', toggleActions: 'play none none reverse' }, val: target, duration: 2, ease: 'power1.out', onUpdate: () => { el.textContent = Math.floor(obj.val).toLocaleString() + (el.dataset.suffix || ''); } });
   });
-};
-
-if (typeof window !== 'undefined') {
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initGsap);
-  else initGsap();
-}
 </script>
