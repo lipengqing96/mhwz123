@@ -3,14 +3,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 ---
-<BaseLayout title="页面未找到 - LuxeRank">
+<BaseLayout title="Page Not Found - LuxeRank">
   <fragment slot="header"><Header /></fragment>
   <fragment slot="footer"><Footer /></fragment>
   <section class="min-h-screen flex items-center justify-center bg-cream">
     <div class="text-center px-6">
       <h1 class="font-playfair text-9xl font-bold gold-gradient-text mb-6">404</h1>
-      <p class="font-inter text-xl text-secondary mb-8">抱歉，您访问的页面不存在</p>
-      <a href="/" class="btn-gold">返回首页</a>
+      <p class="font-inter text-xl text-secondary mb-8">Sorry, the page you are looking for does not exist</p>
+      <a href="/" class="btn-gold">Back to Home</a>
     </div>
   </section>
 </BaseLayout>
