@@ -18,7 +18,7 @@
   },
   "categories": {
     "home-kitchen": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80",
-    "fitness-health": "https://images.unsplash.com/photo-1517836357463-d25d9ac13e7d?w=800&q=80",
+    "fitness-health": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80",
     "beauty-care": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=80",
     "smart-home": "https://images.unsplash.com/photo-1558002038-1055907df827?w=800&q=80",
     "outdoor-travel": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&q=80"
@@ -26,7 +26,7 @@
   "homepage": {
     "hero-bg": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1920&q=80",
     "hero-card-1": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80",
-    "hero-card-2": "https://images.unsplash.com/photo-1517836357463-d25d9ac13e7d?w=600&q=80",
+    "hero-card-2": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&q=80",
     "hero-card-3": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80",
     "hero-card-4": "https://images.unsplash.com/photo-1558002038-1055907df827?w=600&q=80"
   }
