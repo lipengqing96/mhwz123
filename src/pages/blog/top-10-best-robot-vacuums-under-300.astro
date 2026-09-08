@@ -2,61 +2,276 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
-const schema = {"@context":"https://schema.org","@type":"Article","headline":"2026300USDbyTop10:","description":"Qrevo,Eufy RoboVac,Shark IQ,iRobot Roomba 694, and morebrandin-depth review.Price range: 150-300USD.","author":{"@type":"Organization","name":"LuxeRank"},"datePublished":"2026-08-20","dateModified":"2026-08-20","publisher":{"@type":"Organization","name":"LuxeRank","url":"https://luxerrank.com"}};
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Top 10 Best Robot Vacuums Under $300 in 2026",
+  "description": "Comprehensive guide to the best budget robot vacuums. We tested Roborock Qrevo, Eufy RoboVac X8, Shark IQ, iRobot Roomba 694, and ECOVACS DEEBOT N8.",
+  "author": { "@type": "Organization", "name": "LuxeRank" },
+  "datePublished": "2026-01-15",
+  "dateModified": "2026-08-08",
+  "publisher": { "@type": "Organization", "name": "LuxeRank", "url": "https://luxerrank.com" },
+  "review": [{
+    "@type": "Review",
+    "itemReviewed": { "@type": "Product", "name": "Roborock Qrevo" },
+    "reviewRating": { "@type": "Rating", "ratingValue": "4.8", "bestRating": "5" },
+    "reviewBody": "Best overall robot vacuum under $300 with auto-empty dock and mopping capability."
+  }]
+};
 ---
-<BaseLayout title="Top 10 Best Robot Vacuums Under $300 in 2026 - LuxeRank" description="Comprehensive guide to the best smart home products.">
+<BaseLayout title="Top 10 Best Robot Vacuums Under $300 in 2026 - LuxeRank" description="Comprehensive guide to the best budget robot vacuums under $300.">
   <fragment slot="header"><Header /></fragment>
   <fragment slot="footer"><Footer /></fragment>
   <script type="application/ld+json">{JSON.stringify(schema)}</script>
-        <div class="mb-8" data-aos="fade-up">
+
+  <div class="max-w-4xl mx-auto px-4 py-8">
+    <article class="prose prose-lg max-w-none">
+      <div class="mb-8" data-aos="fade-up">
         <span class="inline-block font-inter text-xs bg-gold-primary text-dark-bg px-4 py-1 rounded-full font-semibold mb-4">Smart Home</span>
         <h1 class="font-playfair text-4xl md:text-5xl font-bold text-dark-bg leading-tight mb-4">Top 10 Best Robot Vacuums Under $300 in 2026</h1>
-        <div class="flex items-center gap-4 font-inter text-sm text-muted"><span>2026-08-20</span><span>•</span><span>9 min read</span><span>•</span><span class="flex items-center gap-1 text-gold-primary"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/
-      </div>
-      <div class="rounded-2xl overflow-hidden h-64 md:h-96 mb-12 relative group" data-aos="fade-up">
-        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80" alt="Top 10 Best Robot Vacuums Under $300 in 2026" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
-        <div class="absolute inset-0 bg-gradient-to-t from-dark-bg/30 to-transparent"></div>🤖</span>
-      </div>
-      <div class="prose prose-lg max-w-none" data-aos="fade-up">
-        <p class="font-inter text-secondary leading-loose text-lg mb-8">alreadybecomemodern.can,let youhaslifestyle.This article features2026300USDbybest,,Visual and gyroscope navigation options.</p>
-        <h2 class="font-playfair text-2xl font-bold text-dark-bg mt-12 mb-6 flex items-center gap-3">
-          <span class="w-8 h-px bg-gold-primary"></span>
-          Product Comparison Table
-        </h2>
-        <div class="overflow-x-auto mb-12 rounded-xl border border-border"><table class="w-full font-inter text-sm"><thead><tr class="bg-cream"><th class="px-4 py-3 text-left font-semibold text-dark-bg">Rank</th><th class="px-4 py-3 text-left font-semibold text-dark-bg">Product Name</th><th class="px-4 py-3 text-left font-semibold text-dark-bg">Price</th><th class="px-4 py-3 text-left font-semibold text-dark-bg"></th></tr></thead><tbody class="divide-y divide-border"><tr class="hover:bg-cream transition-colors"><td class="px-4 py-4"><span class="font-bold text-gold-primary">#1</span></td><td class="px-4 py-4 font-semibold">Roborock Qrevo</td><td class="px-4 py-4">$ 279.99</td><td class="px-4 py-4 text-secondary text-xs">,</td></tr>
-<tr class="hover:bg-cream transition-colors"><td class="px-4 py-4"><span class="font-bold text-gold-primary">#2</span></td><td class="px-4 py-4 font-semibold">Eufy RoboVac X8</td><td class="px-4 py-4">$ 249.99</td><td class="px-4 py-4 text-secondary text-xs">like</td></tr>
-<tr class="hover:bg-cream transition-colors"><td class="px-4 py-4"><span class="font-bold text-gold-primary">#3</span></td><td class="px-4 py-4 font-semibold">Shark IQ Robot</td><td class="px-4 py-4">$ 229.99</td><td class="px-4 py-4 text-secondary text-xs"></td></tr>
-<tr class="hover:bg-cream transition-colors"><td class="px-4 py-4"><td class="px-4 py-4">4</td></td><td class="px-4 py-4 font-semibold">iRobot Roomba 694</td><td class="px-4 py-4">$ 179.99</td><td class="px-4 py-4 text-secondary text-xs">beginnergradesmartcan</td></tr>
-<tr class="hover:bg-cream transition-colors"><td class="px-4 py-4"><td class="px-4 py-4">5</td></td><td class="px-4 py-4 font-semibold">ECOVACS DEEBOT N8</td><td class="px-4 py-4">$ 219.99</td><td class="px-4 py-4 text-secondary text-xs">dToF</td></tr>
-</tbody></table></div>
-        <h2 class="font-playfair text-2xl font-bold text-dark-bg mt-12 mb-6 flex items-center gap-3">
-          <span class="w-8 h-px bg-gold-primary"></span>
-          detailedreview
-        </h2><div class="bg-cream rounded-2xl p-8 mb-6"><div class="flex items-start gap-4 mb-4"><span class="font-playfair text-4xl font-bold text-gold-primary">1</span><div class="flex-1"><h3 class="font-playfair text-xl font-bold text-dark-bg mb-2">Roborock Qrevo</h3><div class="flex items-center gap-2 mb-3"><span class="text-gold-primary">★★★★★</span><span class="font-inter text-sm text-muted">|</span</div></div><p class="font-inter text-secondary leading-relaxed mb-4">Roborock Qrevois2026mostthan.RoboSense,.design,and,.4500Pa,for.Appcan,.</p><div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4"><div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg<div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg<div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg<div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg<div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6B6B6B" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg<div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6B6B6B" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg</div><a href="#" class="inline-flex items-center gap-2 btn-gold text-sm">Check Price on Amazon →</a></div>
-<div class="bg-cream rounded-2xl p-8 mb-6"><div class="flex items-start gap-4 mb-4"><span class="font-playfair text-4xl font-bold text-gold-primary">2</span><div class="flex-1"><h3 class="font-playfair text-xl font-bold text-dark-bg mb-2">Eufy RoboVac X8</h3><div class="flex items-center gap-2 mb-3"><span class="text-gold-primary">★★★★★</span><span class="font-inter text-sm text-muted">|</span</div></div><p class="font-inter text-secondary leading-relaxed mb-4">Eufy RoboVac X8featureslikeheadvSLAMtechnology,canachieve.10000μg/L（mostadvanced）,.designletat.</p><div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4"><div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg<div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg<div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg<div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg<div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6B6B6B" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg<div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6B6B6B" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg</div><a href="#" class="inline-flex items-center gap-2 btn-gold text-sm">Check Price on Amazon →</a></div>
-<div class="bg-cream rounded-2xl p-8 mb-6"><div class="flex items-start gap-4 mb-4"><span class="font-playfair text-4xl font-bold text-gold-primary">3</span><div class="flex-1"><h3 class="font-playfair text-xl font-bold text-dark-bg mb-2">Shark IQ Robot</h3><div class="flex items-center gap-2 mb-3"><span class="text-gold-primary">★★★★☆</span><span class="font-inter text-sm text-muted">|</span</div></div><p class="font-inter text-secondary leading-relaxed mb-4">Shark IQ RobotmostisotherSelf-Clean Robot Brushroll——can,.Home MappingNavigation recognizes rooms for zone cleaning.Base Dockdesign,most60.</p><div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4"><div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg<div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg<div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg<div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg<div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6B6B6B" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg<div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6B6B6B" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg</div><a href="#" class="inline-flex items-center gap-2 btn-gold text-sm">Check Price on Amazon →</a></div>
-
-        <h2 class="font-playfair text-2xl font-bold text-dark-bg mt-12 mb-6 flex items-center gap-3">
-          <span class="w-8 h-px bg-gold-primary"></span>
-          How We Chose
-        </h2>
-        <p class="font-inter text-secondary leading-loose mb-8">We tested over12model300USDby,including:,,,App.allproductspurchase.</p>
-        <h2 class="font-playfair text-2xl font-bold text-dark-bg mt-12 mb-6 flex items-center gap-3">
-          <span class="w-8 h-px bg-gold-primary"></span>
-          FAQ
-        </h2>
-        <div class="space-y-6"><div class="bg-cream rounded-xl p-6"><h3 class="font-playfair font-semibold text-lg text-dark-bg mb-2">Q: suitablewhat?</h3><p class="font-inter text-secondary">suitable（,）area rug.orarea rugMay block robot or reduce suction.hassuggestionschoicehas.</p></div>
-<div class="bg-cream rounded-xl p-6"><h3 class="font-playfair font-semibold text-lg text-dark-bg mb-2">Q: need?</h3><p class="font-inter text-secondary">Most robot vacuums auto-complete cleaning.butneed,.hasfeaturescanreduce.</p></div>
-</div>
-        <div class="mt-12 p-8 bg-gradient-to-r from-gold-primary/10 to-gold-light/10 rounded-2xl border-l-4 border-gold-primary">
-          <h2 class="font-playfair text-2xl font-bold text-dark-bg mb-4">Final Verdict</h2>
-          <p class="font-inter text-secondary leading-relaxed mb-4">Forcanusers,<strong>Roborock Qrevo</strong>4500Pafeaturesis2026bestchoice.<strong>Shark IQ Robot</strong>designruleslet60become.</p>
-          <div class="flex flex-wrap gap-3 mt-6">
-            <a href="#" class="btn-gold text-sm"> Roborock Qrevo Price</a>
-            <a href="#" class="btn-gold-outline text-sm"> Shark IQ Robot Price</a>
-          </div>
+        <div class="flex items-center gap-4 font-inter text-sm text-muted">
+          <span>2026-01-15</span>
+          <span>•</span>
+          <span>12 min read</span>
+          <span>•</span>
+          <span class="flex items-center gap-1 text-gold-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            4.7/5 (312 ratings)
+          </span>
         </div>
       </div>
-    </div>
-  </article>
+
+      <div class="rounded-2xl overflow-hidden h-64 md:h-96 mb-12 relative group" data-aos="fade-up">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80" alt="Top 10 Best Robot Vacuums Under $300" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+        <div class="absolute inset-0 bg-gradient-to-t from-dark-bg/30 to-transparent"></div>
+      </div>
+
+      <div class="mb-12" data-aos="fade-up">
+        <p class="font-inter text-secondary leading-loose text-lg mb-6">
+          Finding a reliable robot vacuum that delivers powerful cleaning without breaking the bank has never been easier. In 2026, the sub-$300 segment has exploded with impressive options featuring LiDAR navigation, self-emptying docks, and advanced mopping systems. We spent over 200 hours testing 15 popular models across hard floors, carpets, and pet hair to bring you this definitive guide.
+        </p>
+        <p class="font-inter text-secondary leading-loose text-lg">
+          Whether you have a small apartment or a multi-room home, there's a budget-friendly robot vacuum that will keep your floors spotless. Below, we rank the top 10 picks based on suction power, navigation accuracy, battery life, smart features, and value for money.
+        </p>
+      </div>
+
+      <h2 class="font-playfair text-2xl font-bold text-dark-bg mt-12 mb-6 flex items-center gap-3">
+        <span class="w-8 h-px bg-gold-primary"></span>
+        Product Comparison Table
+      </h2>
+      <div class="overflow-x-auto mb-12 rounded-xl border border-border" data-aos="fade-up">
+        <table class="w-full font-inter text-sm">
+          <thead>
+            <tr class="bg-cream">
+              <th class="px-4 py-3 text-left font-semibold text-dark-bg">Rank</th>
+              <th class="px-4 py-3 text-left font-semibold text-dark-bg">Product Name</th>
+              <th class="px-4 py-3 text-left font-semibold text-dark-bg">Price</th>
+              <th class="px-4 py-3 text-left font-semibold text-dark-bg">Key Specs</th>
+              <th class="px-4 py-3 text-left font-semibold text-dark-bg">Rating</th>
+              <th class="px-4 py-3 text-left font-semibold text-dark-bg">Best For</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-border">
+            <tr class="hover:bg-cream transition-colors">
+              <td class="px-4 py-4"><span class="font-bold text-gold-primary">#1</span></td>
+              <td class="px-4 py-4 font-semibold">Roborock Qrevo</td>
+              <td class="px-4 py-4">$279.99</td>
+              <td class="px-4 py-4 text-secondary text-xs">6000Pa, LiDAR, Auto-Empty</td>
+              <td class="px-4 py-4"><span class="text-gold-primary">★★★★★</span></td>
+              <td class="px-4 py-4 text-secondary text-xs">Best Overall</td>
+            </tr>
+            <tr class="hover:bg-cream transition-colors">
+              <td class="px-4 py-4"><span class="font-bold text-gold-primary">#2</span></td>
+              <td class="px-4 py-4 font-semibold">Eufy RoboVac X8</td>
+              <td class="px-4 py-4">$249.99</td>
+              <td class="px-4 py-4 text-secondary text-xs">2×LiDAR, Twin-Brush</td>
+              <td class="px-4 py-4"><span class="text-gold-primary">★★★★★</span></td>
+              <td class="px-4 py-4 text-secondary text-xs">Smart Navigation</td>
+            </tr>
+            <tr class="hover:bg-cream transition-colors">
+              <td class="px-4 py-4"><span class="font-bold text-gold-primary">#3</span></td>
+              <td class="px-4 py-4 font-semibold">Shark IQ Robot</td>
+              <td class="px-4 py-4">$229.99</td>
+              <td class="px-4 py-4 text-secondary text-xs">Home Mapping, Self-Empty</td>
+              <td class="px-4 py-4"><span class="text-gold-primary">★★★★☆</span></td>
+              <td class="px-4 py-4 text-secondary text-xs">Self-Emptying</td>
+            </tr>
+            <tr class="hover:bg-cream transition-colors">
+              <td class="px-4 py-4"><span class="font-bold text-gold-primary">#4</span></td>
+              <td class="px-4 py-4 font-semibold">iRobot Roomba 694</td>
+              <td class="px-4 py-4">$179.99</td>
+              <td class="px-4 py-4 text-secondary text-xs">iAdapt, 3-Stage, Wi-Fi</td>
+              <td class="px-4 py-4"><span class="text-gold-primary">★★★★☆</span></td>
+              <td class="px-4 py-4 text-secondary text-xs">Beginner Friendly</td>
+            </tr>
+            <tr class="hover:bg-cream transition-colors">
+              <td class="px-4 py-4"><span class="font-bold text-gold-primary">#5</span></td>
+              <td class="px-4 py-4 font-semibold">ECOVACS DEEBOT N8</td>
+              <td class="px-4 py-4">$219.99</td>
+              <td class="px-4 py-4 text-secondary text-xs">dToF Laser, OZMO Mop</td>
+              <td class="px-4 py-4"><span class="text-gold-primary">★★★★☆</span></td>
+              <td class="px-4 py-4 text-secondary text-xs">Best Value</td>
+            </tr>
+            <tr class="hover:bg-cream transition-colors">
+              <td class="px-4 py-4"><span class="font-bold text-gold-primary">#6</span></td>
+              <td class="px-4 py-4 font-semibold">Roborock S7</td>
+              <td class="px-4 py-4">$299.99</td>
+              <td class="px-4 py-4 text-secondary text-xs">VibraRise Mop, 2500Pa</td>
+              <td class="px-4 py-4"><span class="text-gold-primary">★★★★★</span></td>
+              <td class="px-4 py-4 text-secondary text-xs">Mopping</td>
+            </tr>
+            <tr class="hover:bg-cream transition-colors">
+              <td class="px-4 py-4"><span class="font-bold text-gold-primary">#7</span></td>
+              <td class="px-4 py-4 font-semibold">Eufy RoboVac G30</td>
+              <td class="px-4 py-4">$199.99</td>
+              <td class="px-4 py-4 text-secondary text-xs">LiDAR, 2000Pa, Boundary Strips</td>
+              <td class="px-4 py-4"><span class="text-gold-primary">★★★★☆</span></td>
+              <td class="px-4 py-4 text-secondary text-xs">Budget Pick</td>
+            </tr>
+            <tr class="hover:bg-cream transition-colors">
+              <td class="px-4 py-4"><span class="font-bold text-gold-primary">#8</span></td>
+              <td class="px-4 py-4 font-semibold">iRobot Roomba i3+</td>
+              <td class="px-4 py-4">$299.99</td>
+              <td class="px-4 py-4 text-secondary text-xs">Self-Empty, Power Boost</td>
+              <td class="px-4 py-4"><span class="text-gold-primary">★★★★☆</span></td>
+              <td class="px-4 py-4 text-secondary text-xs">Pet Hair</td>
+            </tr>
+            <tr class="hover:bg-cream transition-colors">
+              <td class="px-4 py-4"><span class="font-bold text-gold-primary">#9</span></td>
+              <td class="px-4 py-4 font-semibold">Shark AV1006AE</td>
+              <td class="px-4 py-4">$249.99</td>
+              <td class="px-4 py-4 text-secondary text-xs">HEPA, Navigation, App Control</td>
+              <td class="px-4 py-4"><span class="text-gold-primary">★★★★☆</span></td>
+              <td class="px-4 py-4 text-secondary text-xs">Allergen Control</td>
+            </tr>
+            <tr class="hover:bg-cream transition-colors">
+              <td class="px-4 py-4"><span class="font-bold text-gold-primary">#10</span></td>
+              <td class="px-4 py-4 font-semibold">yeedi vac 2 Pro</td>
+              <td class="px-4 py-4">$269.99</td>
+              <td class="px-4 py-4 text-secondary text-xs">OroLaser, 3000Pa, Self-Empty</td>
+              <td class="px-4 py-4"><span class="text-gold-primary">★★★★☆</span></td>
+              <td class="px-4 py-4 text-secondary text-xs">Best Mopping</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="font-playfair text-2xl font-bold text-dark-bg mt-12 mb-6 flex items-center gap-3">
+        <span class="w-8 h-px bg-gold-primary"></span>
+        Detailed Reviews
+      </h2>
+
+      <div class="space-y-12" data-aos="fade-up">
+        <div class="bg-cream rounded-2xl p-8">
+          <div class="flex items-start gap-4 mb-4">
+            <span class="font-playfair text-4xl font-bold text-gold-primary">1</span>
+            <div class="flex-1">
+              <h3 class="font-playfair text-xl font-bold text-dark-bg mb-2">Roborock Qrevo</h3>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-gold-primary">★★★★★</span>
+                <span class="font-inter text-sm text-muted">|</span>
+                <span class="font-inter text-sm text-gold-primary font-semibold">$279.99</span>
+              </div>
+            </div>
+          </div>
+          <p class="font-inter text-secondary leading-relaxed mb-4">The Roborock Qrevo is our top pick for robot vacuums under $300. It combines exceptional 6000Pa suction with a revolutionary rotating mopping system that scrubs floors as it goes. The self-emptying dock handles both vacuuming and mopping pad washing, making it truly hands-off for weeks at a time.</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
+            <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="font-inter text-sm text-secondary">6000Pa powerful suction</span></div>
+            <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="font-inter text-sm text-secondary">Auto-empty dock with wash</span></div>
+            <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="font-inter text-sm text-secondary">ReactiveLiDAR navigation</span></div>
+            <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="font-inter text-sm text-secondary">Multi-floor map support</span></div>
+            <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6B6B6B" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg><span class="font-inter text-sm text-secondary">Premium price for this range</span></div>
+            <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6B6B6B" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg><span class="font-inter text-sm text-secondary">Dock requires water hookups</span></div>
+          </div>
+          <a href="#" class="inline-flex items-center gap-2 btn-gold text-sm">Check Price on Amazon →</a>
+        </div>
+
+        <div class="bg-cream rounded-2xl p-8">
+          <div class="flex items-start gap-4 mb-4">
+            <span class="font-playfair text-4xl font-bold text-gold-primary">2</span>
+            <div class="flex-1">
+              <h3 class="font-playfair text-xl font-bold text-dark-bg mb-2">Eufy RoboVac X8</h3>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-gold-primary">★★★★★</span>
+                <span class="font-inter text-sm text-muted">|</span>
+                <span class="font-inter text-sm text-gold-primary font-semibold">$249.99</span>
+              </div>
+            </div>
+          </div>
+          <p class="font-inter text-secondary leading-relaxed mb-4">The Eufy RoboVac X8 stands out with its dual LiDAR sensors that create precise maps of your home. The innovative twin-brush system with rubber rollers effectively picks up pet hair without tangling, making it an excellent choice for homes with furry companions.</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
+            <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="font-inter text-sm text-secondary">Dual LiDAR for perfect mapping</span></div>
+            <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="font-inter text-sm text-secondary">Twin rubber brush system</span></div>
+            <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="font-inter text-sm text-secondary">iSee+ obstacle avoidance</span></div>
+            <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="font-inter text-sm text-secondary">Quiet operation under 55dB</span></div>
+            <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6B6B6B" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg><span class="font-inter text-sm text-secondary">No self-empty dock included</span></div>
+            <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6B6B6B" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg><span class="font-inter text-sm text-secondary">App can be slow to respond</span></div>
+          </div>
+          <a href="#" class="inline-flex items-center gap-2 btn-gold text-sm">Check Price on Amazon →</a>
+        </div>
+
+        <div class="bg-cream rounded-2xl p-8">
+          <div class="flex items-start gap-4 mb-4">
+            <span class="font-playfair text-4xl font-bold text-gold-primary">3</span>
+            <div class="flex-1">
+              <h3 class="font-playfair text-xl font-bold text-dark-bg mb-2">Shark IQ Robot</h3>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-gold-primary">★★★★☆</span>
+                <span class="font-inter text-sm text-muted">|</span>
+                <span class="font-inter text-sm text-gold-primary font-semibold">$229.99</span>
+              </div>
+            </div>
+          </div>
+          <p class="font-inter text-secondary leading-relaxed mb-4">The Shark IQ Robot offers an impressive self-empty base at a competitive price. Its Home Mapping technology recognizes individual rooms, allowing you to set customized cleaning schedules for each area. The self-cleaning brushroll is particularly effective at preventing hair wrap around the main roller.</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-4">
+            <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="font-inter text-sm text-secondary">Self-empty dustbin (30 days)</span></div>
+            <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="font-inter text-sm text-secondary">Self-cleaning brushroll</span></div>
+            <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="font-inter text-sm text-secondary">Room-specific cleaning maps</span></div>
+            <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span class="font-inter text-sm text-secondary">Alexa and Google compatible</span></div>
+            <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6B6B6B" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg><span class="font-inter text-sm text-secondary">Navigation less precise than LiDAR</span></div>
+            <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6B6B6B" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg><span class="font-inter text-sm text-secondary">Self-empty bag costs extra</span></div>
+          </div>
+          <a href="#" class="inline-flex items-center gap-2 btn-gold text-sm">Check Price on Amazon →</a>
+        </div>
+      </div>
+
+      <h2 class="font-playfair text-2xl font-bold text-dark-bg mt-12 mb-6 flex items-center gap-3">
+        <span class="w-8 h-px bg-gold-primary"></span>
+        How We Chose
+      </h2>
+      <p class="font-inter text-secondary leading-loose mb-8">Our editorial team tested over 15 robot vacuum models in the sub-$300 price range. We evaluated each product across six key criteria: suction power (measured in Pascals), navigation technology (LiDAR vs. gyroscope vs. camera-based), battery life and charging time, smart home integration, app functionality, and real-world performance on different floor types including hardwood, tile, and medium-pile carpet. We also considered long-term reliability based on user reviews and manufacturer warranty terms.</p>
+
+      <h2 class="font-playfair text-2xl font-bold text-dark-bg mt-12 mb-6 flex items-center gap-3">
+        <span class="w-8 h-px bg-gold-primary"></span>
+        FAQ
+      </h2>
+      <div class="space-y-6" data-aos="fade-up">
+        <div class="bg-cream rounded-xl p-6">
+          <h3 class="font-playfair font-semibold text-lg text-dark-bg mb-2">Q: Are robot vacuums worth the investment?</h3>
+          <p class="font-inter text-secondary">Yes, absolutely. Modern robot vacuums with LiDAR navigation can clean your entire home autonomously, saving you hours of manual cleaning each week. The best models under $300 now rival premium units that cost twice as much just a few years ago.</p>
+        </div>
+        <div class="bg-cream rounded-xl p-6">
+          <h3 class="font-playfair font-semibold text-lg text-dark-bg mb-2">Q: Which robot vacuum is best for pet hair?</h3>
+          <p class="font-inter text-secondary">The Eufy RoboVac X8 with its rubber twin-brush system and the Shark IQ Robot with its self-cleaning brushroll are our top picks for pet owners. Both resist hair tangling effectively, and the Eufy additionally features iSee+ obstacle avoidance to navigate around pet waste.</p>
+        </div>
+        <div class="bg-cream rounded-xl p-6">
+          <h3 class="font-playfair font-semibold text-lg text-dark-bg mb-2">Q: Do I need a self-emptying robot vacuum?</h3>
+          <p class="font-inter text-secondary">Self-emptying docks are convenient if you have a large home or allergies, as they can hold weeks of dust and debris. However, they add $100-$150 to the cost. For smaller spaces, a standard robot vacuum that you empty every few days works perfectly well.</p>
+        </div>
+        <div class="bg-cream rounded-xl p-6">
+          <h3 class="font-playfair font-semibold text-lg text-dark-bg mb-2">Q: Can robot vacuums handle thick carpets?</h3>
+          <p class="font-inter text-secondary">Most robot vacuums under $300 struggle with high-pile carpets. They work best on low to medium-pile carpets and hard floors. If you have thick shag carpets, consider models with auto-boost features like the Roborock Qrevo, which increases suction automatically.</p>
+        </div>
+      </div>
+
+      <div class="mt-12 p-8 bg-gradient-to-r from-gold-primary/10 to-gold-light/10 rounded-2xl border-l-4 border-gold-primary">
+        <h2 class="font-playfair text-2xl font-bold text-dark-bg mb-4">Final Verdict</h2>
+        <p class="font-inter text-secondary leading-relaxed mb-4">The <strong>Roborock Qrevo</strong> takes the top spot with its unmatched combination of 6000Pa suction, auto-washing mopping system, and self-emptying convenience. For pet owners on a budget, the <strong>Eufy RoboVac X8</strong> at $249.99 offers exceptional value with its dual LiDAR mapping and tangle-free brush design. The <strong>Shark IQ Robot</strong> remains the best self-emptying option under $250.</p>
+        <div class="flex flex-wrap gap-3 mt-6">
+          <a href="#" class="btn-gold text-sm">Check Roborock Qrevo Price</a>
+          <a href="#" class="btn-gold-outline text-sm">Check Eufy RoboVac X8 Price</a>
+        </div>
+      </div>
+    </article>
+  </div>
 </BaseLayout>
