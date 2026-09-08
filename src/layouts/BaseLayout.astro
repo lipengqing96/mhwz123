@@ -1,8 +1,13 @@
 ---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import GsapAnimations from '../components/GsapAnimations.astro';
+
 interface Props {
   title: string;
   description?: string;
 }
+
 const { title, description = 'Curated reviews and expert insights for discerning lifestyles.' } = Astro.props;
 ---
 <!doctype html>
@@ -26,7 +31,8 @@ const { title, description = 'Curated reviews and expert insights for discerning
   </head>
   <body class="min-h-screen bg-white">
     <div id="progress-bar"></div>
-    <slot name="header" />
+    <fragment slot="header"><Header /></fragment>
+    <GsapAnimations />
     <main class="pt-16">
       <slot />
     </main>
