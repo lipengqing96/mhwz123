@@ -1,0 +1,117 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const slug = Astro.url.pathname.split('/product/')[1] || 'nutribullet-go';
+
+// 产品数据
+const products: Record<string, {
+  name: string;
+  brand: string;
+  price: string;
+  amazonUrl: string;
+  image: string;
+  description: string;
+  features: string[];
+}> = {
+  "nutribullet-go": {
+    name: "NutriBullet Go",
+    brand: "NutriBullet",
+    price: "$49.99",
+    amazonUrl: "https://www.amazon.com/dp/B09xxxxxxxx?tag=your-affiliate-tag-20",
+    image: "https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?w=800&q=80",
+    description: "便携搅拌机的最佳选择，USB-C充电设计，强劲搅拌动力。",
+    features: ["USB-C充电", "18oz容量", "便携设计", "强劲马达"]
+  },
+  "blenderbottle-sport": {
+    name: "BlenderBottle Sport",
+    brand: "BlenderBottle",
+    price: "$29.99",
+    amazonUrl: "https://www.amazon.com/dp/B08xxxxxxxx?tag=your-affiliate-tag-20",
+    image: "https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?w=800&q=80",
+    description: "经济实惠的选择，无需电力，真空密封设计。",
+    features: ["无需电力", "20oz容量", "真空密封", "防漏设计"]
+  },
+  "popbabies-mini": {
+    name: "PopBabies Mini Blender",
+    brand: "PopBabies",
+    price: "$39.99",
+    amazonUrl: "https://www.amazon.com/dp/B07xxxxxxxx?tag=your-affiliate-tag-20",
+    image: "https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?w=800&q=80",
+    description: "可爱外观，紧凑设计，适合单人使用。",
+    features: ["可爱设计", "13oz容量", "6刀片系统", "多色可选"]
+  }
+};
+
+const product = products[slug] || products["nutribullet-go"];
+---
+
+<BaseLayout title={`${product.name} - 价格与评测 | LuxeRank`} description={`查看${product.name}的最新价格和详细评测。`}>
+  <fragment slot="header">
+    <Header />
+  </fragment>
+  <fragment slot="footer">
+    <Footer />
+  </fragment>
+
+  <article class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-6">
+      <nav class="font-inter text-sm text-muted mb-8" data-aos="fade-up">
+        <a href="/" class="hover:text-gold-primary">Home</a>
+        <span class="mx-2">/</span>
+        <a href="/blog" class="hover:text-gold-primary">Blog</a>
+        <span class="mx-2">/</span>
+        <span class="text-dark-bg">{product.name}</span>
+      </nav>
+
+      <div class="mb-8" data-aos="fade-up">
+        <span class="inline-block font-inter text-xs bg-gold-primary text-dark-bg px-4 py-1 rounded-full font-semibold mb-4">{product.brand}</span>
+        <h1 class="font-playfair text-4xl md:text-5xl font-bold text-dark-bg leading-tight mb-4">{product.name}</h1>
+        <div class="flex items-center gap-4 font-inter text-sm">
+          <span class="font-playfair text-2xl font-bold text-gold-primary">{product.price}</span>
+          <span class="text-muted">|</span>
+          <span class="text-muted">Amazon Prime 配送</span>
+        </div>
+      </div>
+
+      <div class="rounded-2xl overflow-hidden h-96 mb-12 relative group" data-aos="fade-up">
+        <img src={product.image} alt={product.name} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+        <div class="absolute inset-0 bg-gradient-to-t from-dark-bg/30 to-transparent"></div>
+      </div>
+
+      <div class="prose prose-lg max-w-none mb-12" data-aos="fade-up">
+        <p class="font-inter text-secondary leading-loose text-lg mb-6">{product.description}</p>
+        
+        <h2 class="font-playfair text-2xl font-bold text-dark-bg mt-12 mb-6 flex items-center gap-3">
+          <span class="w-8 h-px bg-gold-primary"></span>
+          产品特点
+        </h2>
+        <ul class="grid grid-cols-2 gap-4 font-inter text-secondary">
+          {product.features.map((feature: string) => (
+            <li class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2D5A4C" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+              {feature}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="mt-12 p-8 bg-gradient-to-r from-gold-primary/10 to-gold-light/10 rounded-2xl border-l-4 border-gold-primary" data-aos="fade-up">
+        <h2 class="font-playfair text-2xl font-bold text-dark-bg mb-4">查看最新价格</h2>
+        <p class="font-inter text-secondary leading-relaxed mb-6">点击按钮查看 {product.name} 在 Amazon 的最新价格和优惠信息。</p>
+        <a href={product.amazonUrl} target="_blank" rel="noopener noreferrer sponsored" class="inline-flex items-center gap-2 btn-gold text-sm px-8 py-4 text-base">
+          查看 Amazon 价格 →
+        </a>
+        <p class="font-inter text-xs text-muted mt-4">* 本网站可能获得佣金。价格可能有变动，请以 Amazon 为准。</p>
+      </div>
+
+      <div class="mt-12 text-center">
+        <a href="/blog" class="font-inter text-sm text-gold-primary hover:underline">← 返回所有评测</a>
+      </div>
+    </div>
+  </article>
+</BaseLayout>
