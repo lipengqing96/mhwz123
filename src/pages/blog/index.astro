@@ -4,6 +4,16 @@ import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 const posts = [
   {
+    "title": "Roller Rabbit Review: The Viral Cozy Brand Everyone is Talking About",
+    "slug": "top-10-best-rollerrabbit-review-2026",
+    "cat": "Fashion & Lifestyle",
+    "slugCat": "fashion-lifestyle",
+    "time": "6min read",
+    "date": "2026-10-11",
+    "desc": "Discover Roller Rabbit, the viral cozy brand taking over social media. Explore their collections, quality review, and where to buy.",
+    "img": "https://images.unsplash.com/photo-1556906781-9a412961c28c?w=800&q=80"
+  },
+  {
     "title": "Top 10 Best Portable Blenders for Smoothies in 2026",
     "slug": "top-10-best-portable-blenders-smoothies-2026",
     "cat": "Home & Kitchen",
@@ -200,3 +210,4 @@ const posts = [
     if (cat && categoryMap[cat]) { titleEl.textContent = categoryMap[cat] + ' Reviews'; backEl.classList.remove('hidden'); cards.forEach(card => { card.style.display = card.dataset.cat === cat ? '' : 'none'; }); }
   </script>
 </BaseLayout>
+
